@@ -4,9 +4,9 @@ pub fn process(input: Vec<String>) -> i64 {
         let mut highest_first = -1;
         let mut highest_second = -1;
         for (i, el) in line.chars().enumerate() {
-            // Make sure we're not in the last character
             let digit = el.to_digit(10).expect("cannot parse digit") as i64;
 
+            // Make sure we're not in the last character
             if i < line.len() - 1 {
                 if digit > highest_first {
                     highest_first = digit;
