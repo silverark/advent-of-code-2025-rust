@@ -31,9 +31,7 @@ pub fn process(input: Vec<String>) -> i64 {
                 for num in &numbers[1..] {
                     match current_value as u8 as char {
                         '+' => calc_sum += *num,
-                        '-' => calc_sum -= *num,
                         '*' => calc_sum *= *num,
-                        '/' => calc_sum /= *num,
                         _ => {
                             panic!("Unknown operator: {}", current_value as u8 as char);
                         }

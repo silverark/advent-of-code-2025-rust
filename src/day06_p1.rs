@@ -19,9 +19,7 @@ pub fn process(input: Vec<String>) -> i64 {
             let current_value = rows[x][i];
             match operator {
                 "+" => calc_sum += current_value,
-                "-" => calc_sum -= current_value,
                 "*" => calc_sum *= current_value,
-                "/" => calc_sum /= current_value,
                 _ => {
                     panic!("Unknown operator: {}", operator);
                 }
