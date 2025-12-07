@@ -6,7 +6,7 @@ pub fn process(input: Vec<String>) -> i64 {
     // get start column of S
     let start_col = grid[0].iter().position(|&c| c == 'S').unwrap_or(0);
 
-    // Adding this in after brute force attempt didn't finish in 15 minutes. I think it would take weeks.
+    // Adding this in after brute force attempt didn't finish in 15 minutes.
     let mut cache: HashMap<(i64, i64), i64> = HashMap::new();
 
     travel_paths(0, start_col as i64, &grid, &mut cache)
