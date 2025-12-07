@@ -10,5 +10,7 @@ pub mod day05_p1;
 pub mod day05_p2;
 pub mod day06_p1;
 pub mod day06_p2;
+pub mod day07_p1;
+pub mod day07_p2;
 pub mod day_template;
 pub mod util;
